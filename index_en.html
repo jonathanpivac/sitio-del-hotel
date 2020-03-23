@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SUJETO HOSTEL | RELAX AND LEISURE</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<body>
+    <nav>
+       
+        <!--menú de navegación-->
+        <ul>
+            <li><a href="#slider" class="menu-nav">Gallery</a></li>
+            <li><a href="#instalaciones" class="menu-nav">Hotel</a></li>
+            <li><a href="#reservas" class="menu-nav">Booking</a></li>
+        </ul>
+        <!--marca-->
+        <h1>
+            <a href="#">
+                <img src="images/sujetohostel.png" alt="Sujeto Hostel" width="100">
+            </a>    
+        </h1>
+        <ul>
+            <li><a href="#habitaciones" class="menu-nav">Rooms</a></li>
+            <li><a href="#ubicacion" class="menu-nav">Location</a></li>
+            <li><a href="#contacto" class="menu-nav">Contact</a></li>
+        </ul>
+        <div class="language">
+            <a href="index_en.html" class="language"><img src="images/en.png" alt="In English">EN</a>
+            <a href="index.html" class="language"><img src="images/es.png" alt="En Español">ES</a>
+        </div>
+    </nav>
+
+
+    <header>
+        <h2>|SUJETO HOSTEL|</h2>
+        <h2 class="construction"> ENGLISH SITE UNDER CONSTRUCTION</h2>
+        <!--plugin de jQuery-->
+        <!--slider-->
+        <div class="bxslider">
+            <div><img src="images/slider-1.jpg" title="imagen 1" width="200"></div>
+            <div><img src="images/slider-2.jpg" title="imagen 2" width="200"></div>
+            <div><img src="images/slider-3.jpg" title="imagen 3" width="200"></div>
+        </div>
+        <!--<div id="slider">
+            <img src="images/slider-1.jpg" alt="">
+            <img src="images/slider-2.jpg" alt="">
+            <img src="images/slider-3.jpg" alt="">-->
+    </header>
+    <main>
+
+
+        <!---instalaciones/-->
+        <aside id=instalaciones>
+            <hr>
+            <h2>HOTEL</h2>
+            <br>
+                <h3>POOL</h3>
+                <br>
+                <img src="images/piscina.jpg" alt="Piscina" width="200">
+                <br>
+                <br>
+                <h3>ACTIVITY ROOM</h3>
+                <br>
+                <img src="images/entretenimiento.jpg" alt="Sala de entretenimiento" width="200">
+                <br>
+                <br>
+                <h3>RESTAURANT</h3>
+                <br>
+                <img src="images/restarante-1.jpg" alt="Restaurante" width="200">
+                <br>
+                <br>
+                <h3>GYM</h3>
+                <br>
+                <img src="images/gimnasio.jpg" alt="Gimansio" width="200">
+                <br>
+                <br>
+                <hr>
+        </aside>
+        <br>
+        <br>
+        <!---reservas-->
+        <section id=reservas>
+            <h2>BOOKING</h2>
+            <br>
+            <form action="procesar-info.php" method="post">
+                <input type="text" name="nombre" placeholder="Nombre y apellido">
+                <input type="email" name="email" placeholder="Email">
+                <label for="check-in">Check-in</label>
+                <input type="date" name="check-in" required>
+                <label for="check-out">Check-out</label>
+                <input type="date" name="check-out" required>
+                <label for="habitacion">Room</label>
+                <select name="habitacion" id="">
+                    <option value="Economy">Economy</option>
+                    <option value="Standard" selected>Standard</option>
+                    <option value="Suite">Suite</option>
+                    <option value="Premium">Premium</option>
+                </select>
+                <!--<input type="submit" value="Reservar">-->
+                <button type="button">Send</button>
+            </form>
+        </section>
+        <br>
+        <br>
+        <!---habitaciones-->
+        <section id=habitaciones>
+            <h2>ROOMS</h2>
+                <article>
+                    <img src="images/habitacion-economy.jpg" alt="Habitación Economy" width="200">
+                    <h3>Economy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque at ex non molestie. Nam ac odio purus.</p>
+                    <a href="#modal-hab-economy">ver [+]</a>
+                </article>
+                <br>
+                <article>
+                    <img src="images/habitacion-regular.jpg" alt="Habitación Standard" width="200">
+                    <h3>Standard</h3><h3 class="promo">**PROMOCIÓN EN MAYO*</h3>
+                    <p>Duis placerat ornare lacinia. Sed a mi massa. Vestibulum nec turpis ornare, tincidunt nulla id, eleifend sapien. Morbi luctus ex sem. Proin vitae dui mollis,</p>
+                    <a href="#modal-hab-standard">ver [+]</a>
+                </article>
+                <br>
+                <div><article>
+                    <img src="images/habitacion-regular.jpg" alt="Habitación Standard" width="200">
+                    <h3>Standard  **DISCOUNT IN MAY**</h3>
+                    <p>Duis placerat ornare lacinia. Sed a mi massa. Vestibulum nec turpis ornare, tincidunt nulla id, eleifend sapien. Morbi luctus ex sem. Proin vitae dui mollis,</p>
+                    <a href="#modal-hab-standard">ver [+]</a>
+                </article></div>
+                <br>
+                <article>
+                    <img src="images/habitacion-premium.jpg" alt="Habitación Premium" width="200">
+                    <h3>Premium</h3>
+                    <p>Duis placerat ornare lacinia. Sed a mi massa. Vestibulum nec turpis ornare, tincidunt nulla id, eleifend sapien. Morbi luctus ex sem. Proin vitae dui mollis, fermentum sem vel, blandit odio. Sed nec commodo ante. Ut lacinia, nunc eget facilisis placerat, nisi risus iaculis risus, cursus pretium mauris tortor in est.</p>
+                    <a href="#modal-hab-premium">ver [+]</a>
+                </article>
+        </section>
+        <br>
+        <br>
+        <!---ubicacion-->
+        <section id=ubicacion>
+            <h2>LOCATION</h2>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.5477461236342!2d-68.844290670788!3d-32.89311579880858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09108772518b%3A0x25118a536ef3109c!2sSan%20Lorenzo%20269%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1584819532092!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque at ex non molestie. Nam ac odio purus. Pellentesque porta, nibh vitae vulputate lobortis, lectus velit bibendum risus, sed interdum erat justo cursus libero. Quisque tempus feugiat arcu, vel ornare turpis. Nunc sollicitudin venenatis sem dictum iaculis. </p>  
+            </div>
+
+        </section>        
+    </main>
+
+    <footer>
+        <!--contacto-->
+        <h2>CONTACT</h2>
+        <div id="contacto"></div>
+        <a href="#">
+            <img src="images/sujetohostel.png" alt="Sujeto Hostel" width="200">
+        </a> 
+        <h4>San Lorenzo 269
+        <br>Ciudad de Mendoza, Mendoza
+        <br>+54 261 445-0000
+        </h4>
+        <br>
+        <br>
+        <a href="https://www.facebook.com/"  target="_blank">
+            <img src="images/001-facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/"  target="_blank">
+            <img src="images/002-twitter.png" alt="Twitter"></a>
+        <a href="https://instagram.com/"  target="_blank">
+            <img src="images/003-instagram.png" alt="Instagram"> </a>
+        <a href="https://whatsapp.com/"  target="_blank">
+            <img src="images/004-whatsapp.png" alt="Whatsapp"></a>
+    
+    </footer>
+
+
+
+<!-- ---------------------
+  Acá pondré el cointenido 
+  de las ventanas modales 
+---------------------------->
+<!-- <div id="modal-hab-economy">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> -->
+
+<!-- <div id="modal-hab-standard">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> -->
+
+<!-- <div id="modal-hab-suite">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> -->
+
+<!-- <div id="modal-hab-premium">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> -->
+
+
+
+
+</body>
+</html>
