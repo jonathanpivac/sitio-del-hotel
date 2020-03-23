@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>SUJETO HOSTEL | Sitio de placer y descanso</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 </head>
 <body>
     <nav>
@@ -32,13 +33,18 @@
 
 
     <header>
+        <h2>SUJETO HOSTEL - SITIO DE PLACER Y DESCANSO</h2>
+        <!--plugin de jQuery-->
         <!--slider-->
-        <div id="slider">
+        <div class="bxslider">
+            <div><img src="images/slider-1.jpg" title="imagen 1"></div>
+            <div><img src="images/slider-2.jpg" title="imagen 2"></div>
+            <div><img src="images/slider-3.jpg" title="imagen 3"></div>
+        </div>
+        <!--<div id="slider">
             <img src="images/slider-1.jpg" alt="">
-            <!--otras imagenes
             <img src="images/slider-2.jpg" alt="">
             <img src="images/slider-3.jpg" alt="">-->
-        </div>
     </header>
     <main>
 
@@ -75,6 +81,8 @@
             <h2>RESERVAS</h2>
             <br>
             <form action="procesar-info.php" method="post">
+                <input type="text" name="nombre" autofocus="true" placeholder="Nombre y apellido">
+                <input type="email" name="email" placeholder="Email">
                 <label for="check-in">Llegada</label>
                 <input type="date" name="check-in" required>
                 <label for="check-out">Salida</label>
@@ -86,7 +94,8 @@
                     <option value="Suite">Suite</option>
                     <option value="Premium">Premium</option>
                 </select>
-                <input type="submit" value="Reservar">
+                <!--<input type="submit" value="Reservar">-->
+                <button type="button">Enviar</button>
             </form>
         </section>
         <br>
@@ -98,24 +107,28 @@
                     <img src="images/habitacion-economy.jpg" alt="Habitación Economy">
                     <h3>Economy</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque at ex non molestie. Nam ac odio purus.</p>
+                    <a href="#modal-hab-economy">ver [+]</a>
                 </article>
                 <br>
                 <article>
                     <img src="images/habitacion-regular.jpg" alt="Habitación Standard">
                     <h3>Standard</h3>
                     <p>Duis placerat ornare lacinia. Sed a mi massa. Vestibulum nec turpis ornare, tincidunt nulla id, eleifend sapien. Morbi luctus ex sem. Proin vitae dui mollis,</p>
+                    <a href="#modal-hab-standard">ver [+]</a>
                 </article>
                 <br>
                 <article>
                     <img src="images/habitacion-suite.jpg" alt="Habitación en Suite">
                     <h3>Suite</h3>
                     <p>Phasellus sed dictum neque, faucibus pulvinar dui. Nullam ut condimentum tellus. Nunc molestie luctus velit, in dictum massa efficitur vitae. Phasellus auctor maximus magna non fringilla. Ut laoreet metus vitae vulputate tristique. Phasellus rutrum molestie lacus, faucibus maximus ligula sollicitudin a.</p>
+                    <a href="#modal-hab-suite">ver [+]</a>
                 </article>
                 <br>
                 <article>
                     <img src="images/habitacion-premium.jpg" alt="Habitación Premium">
                     <h3>Premium</h3>
                     <p>Duis placerat ornare lacinia. Sed a mi massa. Vestibulum nec turpis ornare, tincidunt nulla id, eleifend sapien. Morbi luctus ex sem. Proin vitae dui mollis, fermentum sem vel, blandit odio. Sed nec commodo ante. Ut lacinia, nunc eget facilisis placerat, nisi risus iaculis risus, cursus pretium mauris tortor in est.</p>
+                    <a href="#modal-hab-premium">ver [+]</a>
                 </article>
         </section>
         <br>
@@ -154,5 +167,47 @@
             <img src="images/004-whatsapp.png" alt="Whatsapp"></a>
     
     </footer>
+
+
+
+<!-- ---------------------
+  Acá pondré el cointenido 
+  de las ventanas modales 
+---------------------------->
+<!-- <div id="modal-hab-economy">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> -->
+
+<!-- <div id="modal-hab-standard">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> -->
+
+<!-- <div id="modal-hab-suite">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> -->
+
+<!-- <div id="modal-hab-premium">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> -->
+
+
+
+
 </body>
 </html>
