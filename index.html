@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>SUJETO HOSTEL | Sitio de placer y descanso</title>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos-cajas.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos-texto.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -15,14 +21,11 @@
             <li><a href="#slider" class="menu-nav">Galería de imágenes</a></li>
             <li><a href="#instalaciones" class="menu-nav">Instalaciones</a></li>
             <li><a href="#reservas" class="menu-nav">Reservas</a></li>
-        </ul>
-        <!--marca-->
-        <h1>
-            <a href="#">
-                <img src="images/sujetohostel.png" alt="Sujeto Hostel" width="100">
-            </a>    
-        </h1>
-        <ul>
+            <li><h1>
+                <a href="#">
+                    <img src="images/sujetohostel.png" alt="Sujeto Hostel" width="100">
+                </a>    
+            </h1></li>
             <li><a href="#habitaciones" class="menu-nav">Habitaciones</a></li>
             <li><a href="#ubicacion" class="menu-nav">Ubicación</a></li>
             <li><a href="#contacto" class="menu-nav">Contacto</a></li>
@@ -35,7 +38,7 @@
 
 
     <header>
-        <h2>SUJETO HOSTEL - SITIO DE PLACER Y DESCANSO</h2>
+        <h2 class="title">sujeto hostel - sitio de placer y descanso</h2>
         <!--plugin de jQuery-->
         <!--slider-->
         <div class="bxslider">
@@ -51,37 +54,8 @@
     <main>
 
 
-        <!---instalaciones/-->
-        <aside id=instalaciones>
-            <hr>
-            <h2>INSTALACIONES</h2>
-            <br>
-                <h3>PISCINA</h3>
-                <br>
-                <img src="images/piscina.jpg" alt="Piscina" width="200">
-                <br>
-                <br>
-                <h3>SALA DE ENTRETENIMIENTO</h3>
-                <br>
-                <img src="images/entretenimiento.jpg" alt="Sala de entretenimiento" width="200">
-                <br>
-                <br>
-                <h3>RESTAURANTE</h3>
-                <br>
-                <img src="images/restarante-1.jpg" alt="Restaurante" width="200">
-                <br>
-                <br>
-                <h3>GIMNASIO</h3>
-                <br>
-                <img src="images/gimnasio.jpg" alt="Gimansio" width="200">
-                <br>
-                <br>
-                <hr>
-        </aside>
-        <br>
-        <br>
-        <!---reservas-->
-        <section id=reservas>
+        <!---reservas/-->
+        <aside id="reservas">
             <h2>RESERVAS</h2>
             <br>
             <form action="procesar-info.php" method="post">
@@ -101,47 +75,76 @@
                 <!--<input type="submit" value="Reservar">-->
                 <button type="button">Enviar</button>
             </form>
+        </aside>
+        <br>
+        <br>
+
+        <!---reservas-->
+        <section id="instalaciones">
+            <hr>
+            <h2>INSTALACIONES</h2> 
+            <article>
+                <h3>PISCINA</h3>
+                <img src="images/piscina.jpg" alt="Piscina" width="300">
+            </article>
+            <br>
+            <article>
+                <h3>SALA DE ENTRETENIMIENTO</h3>
+                <img src="images/entretenimiento.jpg" alt="Sala de entretenimiento" width="300">
+            </article>
+                <br>
+            <article>
+                <h3>RESTAURANTE</h3>
+                <img src="images/restarante-1.jpg" alt="Restaurante" width="300">
+            </article>
+                <br>
+            <article>
+                <h3>GIMNASIO</h3>
+                <img src="images/gimnasio.jpg" alt="Gimansio" width="300">
+            </article>
+                <hr>
         </section>
         <br>
         <br>
         <!---habitaciones-->
-        <section id=habitaciones>
+        <section id="habitaciones">
             <h2>HABITACIONES</h2>
                 <article>
-                    <img src="images/habitacion-economy.jpg" alt="Habitación Economy" width="200">
+                    <img src="images/habitacion-economy.jpg" alt="Habitación Economy" width="400">
                     <h3>Economy</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque at ex non molestie. Nam ac odio purus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus tellus in auctor vulputate. Duis a arcu congue, ultrices lorem semper, vestibulum leo. Morbi sit amet nunc id mi maximus semper. Vivamus interdum erat id vehicula condimentum. Suspendisse ornare eget lectus in posuere. Mauris hendrerit erat blandit volutpat venenatis. Donec pellentesque, metus vel pulvinar blandit, ante arcu pharetra odio, tristique fringilla tellus dui vel libero. Quisque vel lacinia erat. Pellentesque cursus neque tortor, quis finibus augue luctus ac. Mauris vel arcu in ex dapibus maximus. Pellentesque diam ligula, fermentum nec placerat ut, mollis vitae magna.</p>
                     <a href="#modal-hab-economy">ver [+]</a>
                 </article>
                 <br>
-                <div><article>
-                    <img src="images/habitacion-regular.jpg" alt="Habitación Standard" width="200">
-                    <h3>Standard  **PROMOCIÓN EN MAYO**</h3>
-                    <p>Duis placerat ornare lacinia. Sed a mi massa. Vestibulum nec turpis ornare, tincidunt nulla id, eleifend sapien. Morbi luctus ex sem. Proin vitae dui mollis,</p>
+                <article>
+                    <img src="images/habitacion-regular.jpg" alt="Habitación Standard" width="400">
+                    <h3>Standard</h3>  
+                    <h3 class="destacados">**PROMOCIÓN EN MAYO**</h3>
+                    <p>Vestibulum sed nisi consectetur, tempor dolor ac, vulputate neque. Donec ut felis dolor. Proin pretium elementum libero a scelerisque. Aliquam luctus dolor lorem, ut bibendum sem blandit eget. Curabitur ultrices, purus sit amet accumsan hendrerit, odio leo faucibus enim, eu ultrices magna neque sit amet odio. Phasellus lacinia massa eros. Fusce sodales lacus et eleifend lacinia. In hac habitasse platea dictumst. Sed bibendum faucibus justo, non convallis eros efficitur et. Duis laoreet nisl eu nunc congue accumsan. Proin a sem posuere, dapibus quam ut, faucibus lectus. Fusce nec nunc et quam maximus tincidunt. Aliquam eget lectus et ex ultrices ullamcorper a vel leo.</p>
                     <a href="#modal-hab-standard">ver [+]</a>
-                </article></div>
+                </article>
                 <br>
                 <article>
-                    <img src="images/habitacion-suite.jpg" alt="Habitación en Suite" width="200">
+                    <img src="images/habitacion-suite.jpg" alt="Habitación en Suite" width="400">
                     <h3>Suite</h3>
-                    <p>Phasellus sed dictum neque, faucibus pulvinar dui. Nullam ut condimentum tellus. Nunc molestie luctus velit, in dictum massa efficitur vitae. Phasellus auctor maximus magna non fringilla. Ut laoreet metus vitae vulputate tristique. Phasellus rutrum molestie lacus, faucibus maximus ligula sollicitudin a.</p>
+                    <p>Vestibulum et sodales ex. Suspendisse vel mauris sem. Phasellus nec lectus porttitor, faucibus enim vel, egestas lacus. In sit amet leo purus. Nam rutrum feugiat metus et gravida. Praesent ligula risus, egestas in augue in, rutrum laoreet velit. Nam ac justo justo. Etiam laoreet arcu dictum sapien aliquam interdum. Donec a ligula at lorem accumsan vulputate. Aliquam id imperdiet mauris. Donec ultricies, nisl ac pretium consectetur, ligula justo vulputate quam, eu lacinia arcu felis nec massa. Nunc dignissim nisl tristique, consectetur lectus et, mollis tortor. Donec ac ultrices magna. Phasellus blandit massa eu pretium ultricies.</p>
                     <a href="#modal-hab-suite">ver [+]</a>
                 </article>
                 <br>
                 <article>
-                    <img src="images/habitacion-premium.jpg" alt="Habitación Premium" width="200">
+                    <img src="images/habitacion-premium.jpg" alt="Habitación Premium" width="400">
                     <h3>Premium</h3>
-                    <p>A PARTIR DE ABRIL. Duis placerat ornare lacinia. Sed a mi massa. Vestibulum nec turpis ornare, tincidunt nulla id, eleifend sapien. Morbi luctus ex sem. Proin vitae dui mollis, fermentum sem vel, blandit odio. Sed nec commodo ante. Ut lacinia, nunc eget facilisis placerat, nisi risus iaculis risus, cursus pretium mauris tortor in est.</p>
+                    <p>Nullam suscipit finibus est sit amet porta. Nunc mattis venenatis lobortis. Phasellus lobortis tortor risus, sit amet interdum leo hendrerit eu. Nam mollis erat eget nisl ullamcorper luctus. Quisque est sem, euismod et nisl ac, fermentum elementum neque. Aliquam sit amet tempor arcu, sed facilisis ipsum. Aliquam id ante nisi. Cras iaculis tincidunt ipsum sit amet posuere. Donec vestibulum faucibus velit sit amet tincidunt. Vivamus tempus nibh quis lorem placerat, sed pulvinar tortor aliquet. In tristique rhoncus est non varius.</p>
                     <a href="#modal-hab-premium">ver [+]</a>
                 </article>
         </section>
         <br>
         <br>
         <!---ubicacion-->
-        <section id=ubicacion>
+        <section id="ubicacion">
             <h2>UBICACIÓN</h2>
             <div id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.5477461236342!2d-68.844290670788!3d-32.89311579880858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09108772518b%3A0x25118a536ef3109c!2sSan%20Lorenzo%20269%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1584819532092!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.5477461236342!2d-68.844290670788!3d-32.89311579880858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09108772518b%3A0x25118a536ef3109c!2sSan%20Lorenzo%20269%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1584819532092!5m2!1ses-419!2sar" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque at ex non molestie. Nam ac odio purus. Pellentesque porta, nibh vitae vulputate lobortis, lectus velit bibendum risus, sed interdum erat justo cursus libero. Quisque tempus feugiat arcu, vel ornare turpis. Nunc sollicitudin venenatis sem dictum iaculis. </p>  
         </section>        
@@ -149,14 +152,14 @@
 
     <footer>
         <!--contacto-->
-        <h2>CONTACTO</h2>
+        <h2 class="footer">CONTACTO</h2>
         <div id="contacto"></div>
         <a href="#">
             <img src="images/sujetohostel.png" alt="Sujeto Hostel" width="200">
         </a> 
         <h4>San Lorenzo 269
-            <br>Ciudad de Mendoza, Mendoza
-            <br>+54 261 445-0000
+        <br>Ciudad de Mendoza, Mendoza
+        <br>+54 261 445-0000
         </h4>
         <br>
         <br>
