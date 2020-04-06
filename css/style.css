@@ -1,51 +1,213 @@
+
+
+
+/* 
+BASE-----------------------------------------------------------------------------------------------------------------------  */
+@font-face {
+    font-family: 'concert_oneregular';
+    src: url('../fonts/concertone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/concertone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     line-height: 1.5;
-    background: rgb(219, 255, 219);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(165, 250, 69, 0.973);
 }
 
+
+/* 
+HELPERS----------------------------------------------------------------------------------------------------------------------- */
+.center-block {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#reservas, 
+#instalaciones, 
+#habitaciones, 
+#ubicacion {
+    margin: 20px;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+/* 
+LAYOUT-----------------------------------------------------------------------------------------------------------------------  */
+h2, h3 {
+    text-transform: uppercase;
+}
+
+h2, h3, h4, nav {
+    max-width: 100%;
+    margin: 20px;
+    font-family: 'concert_oneregular';
+    
+}
+
+h2 {
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: rgb(5, 131, 5);
+}
+    h2.title {
+        color:rgb(50, 201, 20)
+    }
+    h2.footer {
+        color: rgb(255, 255, 255);
+    }
+
+h3 {
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: rgb(18, 129, 18);
+}
+
+h4 {
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: rgb(18, 129, 18);
+}
+
+
+/* 
+COMPONENTS----------------------------------------------------------------------------------------------------------------------- */
 nav {
+    margin: 20px;
+    padding: 20px; 
     background-color: rgb(39, 162, 45);
+
+}
+    nav ul {
+        list-style: none; 
+        display: inline 
+    }
+        ul li a {
+            display: inline;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color:rgb(255, 255, 255);
+        }
+        ul li a:hover {
+            text-decoration: underline;
+            color: rgb(211, 255, 210);   
+        }
+
+
+.language {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);   
+}
+.language:hover {
+    text-decoration: underline;
+    color: rgb(211, 255, 210);
 }
 
-ul {
-    list-style: none;    
-}
-    ul li a {
-        text-decoration: none;
-        margin-bottom: 15px;
-        color:rgb(255, 255, 255);   
-    }
-    ul li a:hover {
-        text-decoration: underline;
-        color: rgb(211, 255, 210);   
-    }
+.destacados {
+    text-decoration: underline;
+    color: rgb(235, 46, 46);
+} 
 
-/* #instalaciones,
-#habitaciones,
-#ubicaciones, {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    float: left;
-} */
 
+/* 
+PAGES/SECTIONS-----------------------------------------------------------------------------------------------------------------------  */
+/* --HOME---------------------------------------- */
 header {
-    background: rgb(39, 162, 45) url(../images/fondo-header.jpg) no-repeat center center fixed;
-    background-size: cover;
-    /* background-image: url(../images/fondo-header.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed; */
+    margin: 20px;
 }
     header h2.title {
         font-size: 40px;
         letter-spacing: 10px;
         color: rgb(255, 255, 255);
-        text-transform: uppercase;
+    }
+    /* background: rgb(39, 162, 45) url(../images/fondo-header.jpg) no-repeat center center fixed;
+    background-size: cover; */
+    
+    /* Y LA ALTERNATIVA background-image: url(../images/fondo-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; */
+
+/* -------------------ASIDE-------------------RESERVAS---------------------------------------- */
+#reservas {
+    max-width: 20%;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(129, 165, 105);
+}
+    #reservas input {
+        display:block;
     }
 
+/* --SECTION INSTALACIONES---------------------------------------- */
+#instalaciones {
+    max-width: 30%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgb(129, 165, 105);
+}
+    #instalaciones article {
+        border-left: solid 5px rgb(174, 236, 174);
+        padding-left: 20px;
+    }
+    #instalaciones img {
+        max-width: 100%;
+        box-shadow: 3px 3px 5px grey;
+    }
+
+/* --SECTION HABITACIONES---------------------------------------- */
+#habitaciones {
+    max-width: 40%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgb(129, 165, 105);
+}
+    #habitaciones article p {
+        width: 80%;
+        height: 110px;
+        margin-bottom: auto;
+        padding: 15px;
+        padding-bottom: 25px;
+        overflow-y: scroll;
+        background-color: rgb(244, 255, 241);
+    }
+    #habitaciones article img {
+        max-width: 100%;
+        box-shadow: 3px 3px 3px rgb(160, 170, 158);
+        border-radius: 25% 50%;
+    }
+    #habitaciones article a{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(38, 175, 38);  
+    }
+    #habitaciones article a:hover {
+        text-decoration: underline;
+        color: rgb(5, 131, 5);
+    }
+
+
+
+/* --SECTION UBICACION------------------------------------------ */
+#ubicacion {
+    max-width: 40%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgb(129, 165, 105);
+}
+
+
+/* --CONTACTO-- */
 footer {
+    margin: 20px;
+    padding: 20px;
+    padding-top: 80px;
+    text-align: center;
     background-color: rgb(39, 162, 45);
     color: rgb(255, 255, 255);
 }
+
+
+ 
